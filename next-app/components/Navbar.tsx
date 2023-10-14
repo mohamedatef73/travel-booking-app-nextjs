@@ -23,6 +23,13 @@ const Navbar = () => {
       <div className="lg:flexCenter hidden">
         <Button type="button" title="login" icon="/user.svg" variant="btn_dark_green" />
       </div>
+      <Image
+        alt="menu"
+        src="menu.svg"
+        width={32}
+        height={32}
+        className="inline-block cursor-pointer lg:hidden"
+      />
     </nav>
   )
 }
