@@ -1,5 +1,6 @@
 import React from "react"
 import Image from "next/image"
+import Button from "./Button"
 
 const Heros = () => {
   return (
@@ -42,6 +43,32 @@ const Heros = () => {
             198k
             <span className="regular-16 lg:regular-20 ml-1 underline">Exclaent Rewies</span>
           </p>
+        </div>
+        <div className="flex w-full gap-3 sm:flex-row">
+          <Button type="button" title="Download App" variant="btn_green" />
+          <Button type="button" icon="/play.svg" title="How we Work" variant="btn_white_text" />
+        </div>
+      </div>
+      <div className="relative flex flex-1 items-start border-2 border-blue-500">
+        <div className="relative z-20 w-[268px] flex-col gap-8 rounded-3xl bg-green-90 px-7 py-8 ">
+          <div className="flex flex-col">
+            <div className="flexBetween">
+              <p className="regular-16 text-gray-20">Location</p>
+              <Image alt="close" src="/close.svg" width={24} height={24} />
+            </div>
+
+            <div className="flexBetween">
+              <div className="flex flex-col">
+                <p className="regular-16 block text-gray-20">Distance</p>
+                <p className="bold-20 text-white">173.28 mi</p>
+              </div>
+
+              <div className="flex flex-col">
+                <p className="regular-16 block text-gray-20">Elevations</p>
+                <p className="bold-20 text-white">2 km</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
